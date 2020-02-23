@@ -1,0 +1,27 @@
+{
+  "settings": {
+    "number_of_shards": 1
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "id": {
+          "type": "long"
+        },
+        "description": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "units": {
+          "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}
